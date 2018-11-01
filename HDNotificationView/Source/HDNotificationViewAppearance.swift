@@ -21,7 +21,7 @@ public class HDNotificationAppearance: NSObject {
             return UIEdgeInsets(top: 34.0, left: 8.0, bottom: 0.0, right: 8.0)
         }
         else {
-            return UIEdgeInsets(top: 8.0, left: 8.0, bottom: 0.0, right: 8.0)
+            return UIEdgeInsets(top: 25.0, left: 8.0, bottom: 0.0, right: 8.0)
         }
     }()
     func viewMarginTopPreDisplay(notiData: HDNotificationData?) -> CGFloat {
