@@ -312,7 +312,7 @@ public class HDNotificationView: UIView {
         }
         let _appearance = self.appearance
         
-        _keyWindow.windowLevel = .statusBar
+        _keyWindow.windowLevel = UIWindowLevelNormal
         
         _keyWindow.addSubview(self)
         self.snp.makeConstraints { (maker) in
@@ -361,7 +361,7 @@ public class HDNotificationView: UIView {
         /// Reset and callback
         func _resetAndCallback() {
             self.removeFromSuperview()
-            UIApplication.shared.keyWindow?.windowLevel = .normal
+            UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelNormal
             
             self.onDidDismissBlock?()
             onComplete?()
